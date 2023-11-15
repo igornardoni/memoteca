@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Pensamento } from './../pensamento';
+import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pensamento',
   templateUrl: './pensamento.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PensamentoComponent implements OnInit {
 
-  pensamento = {
+  @Input() pensamento: Pensamento = {
+    id: 0, // colocamos o valor 0 pois os dados reais do `id` virão do componente "pai".
     conteudo: 'I love Angular',
     autoria: 'Igor',
     modelo: 'modelo3'
@@ -18,4 +19,15 @@ export class PensamentoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  larguraPensamento(): string {
+    if(this.pensamento.conteudo.length >= 256) {
+      return 'pensamento-g' // CSS class name
+    }
+    else{
+      return 'pensamento-p' // CSS class name
+    }
+  }
 }
+
+// O “ngClass” é uma diretiva de atributos adicionando classes CSS ao elemento, diferente do ngIf e ngFor, que adicionam e removem elementos do template, classificados como estruturais.
+

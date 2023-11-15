@@ -1,0 +1,46 @@
+{
+  "pensamentos": [
+    {
+      "id": 1,
+      "conteudo": "Todo meu sucesso é por Allah. Nele eu confio e a Ele eu irei retornar!",
+      "autoria": "Quran (11:88)",
+      "modelo": "modelo1"
+    },
+    {
+      "id": 2,
+      "conteudo": "Pela misericórdia de Deus, foste gentil para com eles; porém, tivesses tu sido insociável ou de coração insensível, eles se teriam afastado de ti. Portanto, indulta-os implora o perdão para eles e consulta-os nos assuntos (do momento). E quando te decidires, encomenda-te a Deus, porque Deus aprecia aqueles que (a Ele) se encomendam. Se Deus vos secundar, ninguém poderá vencer-vos; por outra, se Ele vos esquecer, quem, em vez d'Ele, vos ajudará? Que os fiéis se encomendem a Deus!",
+      "autoria": "Quran (3:159-160)",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Em verdade, é na lembrança de Allah que o coração encontra conforto!",
+      "autoria": "Quran (13:28)",
+      "modelo": "modelo2"
+    },
+    {
+      "conteudo": "Quanto àquele que se encomendar a Deus, saiba que Ele será Suficiente...",
+      "autoria": "Quran (65:3)",
+      "modelo": "modelo2",
+      "id": 4
+    },
+    {
+      "conteudo": "Os homens fazem a sua própria história, mas não a fazem segundo a sua livre vontade",
+      "autoria": "Karl Marx",
+      "modelo": "modelo3",
+      "id": 5
+    },
+    {
+      "conteudo": "Você esquece de milhares de coisas todos os dias, esqueça essa também",
+      "autoria": "Michael De Santa",
+      "modelo": "modelo1",
+      "id": 6
+    },
+    {
+      "conteudo": "Pensamento teste",
+      "autoria": "Autor teste",
+      "modelo": "modelo1",
+      "id": 7
+    }
+  ]
+}

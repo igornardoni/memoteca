@@ -8,10 +8,24 @@
 
   </header>
 
-  <div class="mural">
+  <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos">
 
-    <app-pensamento></app-pensamento>
+    <div *ngFor="let pensamento of listaPensamentos">
+
+      <app-pensamento [pensamento]="pensamento"></app-pensamento>
+
+    </div>
 
   </div>
 
 </section>
+
+<ng-template #semPensamentos>
+
+  <div class="ff-inter sem-pensamentos">
+
+    <h3>Ainda não há pensamentos cadastrados!</h3>
+
+  </div>
+
+</ng-template>

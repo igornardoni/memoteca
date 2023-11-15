@@ -1,4 +1,4 @@
-<div class="pensamento {{ pensamento.modelo }} ff-roboto-mono pensamento-p">
+<div class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()">
 
   <img src="/assets/imagens/{{ pensamento.modelo }}.png" alt="Aspas coloridas">
   <p class="conteudo">{{ pensamento.conteudo }}</p>
@@ -10,9 +10,11 @@
       <img src="/assets/imagens/icone-editar.png" alt="ícone de edição">
     </button>
 
-    <button class="botao-excluir">
+    <button class="botao-excluir" [routerLink]="'/pensamentos/excluirPensamento/' + pensamento.id">
       <img src="/assets/imagens/icone-excluir.png" alt="ícone de exclusão">
     </button>
+
+
 
   </div>
 

@@ -1,3 +1,4 @@
+import { ExcluirPensamentoComponent } from './components/pensamentos/excluir-pensamento/excluir-pensamento.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CriarPensamentoComponent } from './components/pensamentos/criar-pensamento/criar-pensamento.component';
@@ -19,6 +20,11 @@ const routes: Routes = [
   {
     path: 'listar-pensamentos',
     component: ListarPensamentosComponent
+  },
+
+  {
+    path: 'excluirPensamento/:id',
+    component: ExcluirPensamentoComponent
   },
 
 ];
