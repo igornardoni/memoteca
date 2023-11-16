@@ -37,10 +37,34 @@
       "id": 6
     },
     {
-      "conteudo": "Pensamento teste",
-      "autoria": "Autor teste",
-      "modelo": "modelo1",
+      "conteudo": "Sabei que Deus é meu Senhor e vosso. Adorai-O, pois. Essa é o caminho correto que lhes deixo.",
+      "autoria": "Jesus - Quran (9:31)",
+      "modelo": "modelo2",
       "id": 7
+    },
+    {
+      "conteudo": "Reflita sobre as suas bênçãos presentes, as quais todo homem tem bastante; e não sobre os infortúnios passados, os quais todos homens têm alguns.  ",
+      "autoria": "Charles Dickens",
+      "modelo": "modelo3",
+      "id": 8
+    },
+    {
+      "conteudo": "Eu não sou o que me acontece, eu sou o que escolho me tornar.",
+      "autoria": "Carl Gustav Jung",
+      "modelo": "modelo1",
+      "id": 9
+    },
+    {
+      "conteudo": "Então lembre-se que as coisas vão dar errado às vezes. E tenha em mente que o fracasso geralmente oferece uma oportunidade valiosa de aprender, adaptar e evoluir.",
+      "autoria": "Ray Dalio",
+      "modelo": "modelo3",
+      "id": 10
+    },
+    {
+      "conteudo": "O talento por trás do talento chama-se disciplina.",
+      "autoria": "Joel Jota",
+      "modelo": "modelo1",
+      "id": 11
     }
   ]
 }

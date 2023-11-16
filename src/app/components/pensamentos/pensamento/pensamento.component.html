@@ -6,11 +6,11 @@
 
   <div class="acoes">
 
-    <button class="botao-editar">
+    <button class="botao-editar" [routerLink]="'/pensamentos/editar-pensamento/' + pensamento.id">
       <img src="/assets/imagens/icone-editar.png" alt="ícone de edição">
     </button>
 
-    <button class="botao-excluir" [routerLink]="'/pensamentos/excluirPensamento/' + pensamento.id">
+    <button class="botao-excluir" [routerLink]="'/pensamentos/excluir-pensamento/' + pensamento.id">
       <img src="/assets/imagens/icone-excluir.png" alt="ícone de exclusão">
     </button>
 
@@ -19,3 +19,8 @@
   </div>
 
 </div>
+
+
+<!-- <button class="botao-excluir" routerLink="/pensamentos/excluirPensamento/{{pensamento.id}}">
+  <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+</button> -->

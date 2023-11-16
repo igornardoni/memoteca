@@ -18,9 +18,11 @@ export class ExcluirPensamentoComponent implements OnInit {
   }
 
   constructor(
+
     private service: PensamentoService,
     private router: Router,
     private route: ActivatedRoute
+
   ) { }
 
   ngOnInit(): void {
