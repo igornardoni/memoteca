@@ -37,7 +37,7 @@ export class CriarPensamentoComponent implements OnInit {
   }
 
   criarPensamento(): void {
-    console.log(this.formulario.status);
+    console.log(this.formulario.get('autoria')?.errors); // ? = Operador else
     if(this.formulario.valid) {
       this.service.createPensamentos(this.formulario.value).subscribe(
         () => {

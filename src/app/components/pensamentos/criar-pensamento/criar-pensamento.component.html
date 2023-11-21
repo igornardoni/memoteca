@@ -7,6 +7,7 @@
   <form [formGroup]='formulario'>
     <label for="pensamento">Pensamento:</label>
 
+    <!--two-way data binding-->
     <input
       type="textarea"
       class="input"
@@ -14,7 +15,14 @@
       formControlName="conteudo"
       placeholder="Digite o pensamento"
       >
-      <!--two-way data binding-->
+
+      <!-- Mensagem de erro -->
+
+      <div class="mensagem__erro"
+      *ngIf="formulario.get('conteudo')?.errors && formulario.get('conteudo')?.touched"> <!-- ? = Operador else -->
+        Pensamento é obrigatório
+      </div>
+
 
     <label for="autoria">Autoria ou fonte:</label>
     <input
@@ -24,7 +32,19 @@
       formControlName="autoria"
       placeholder="Digite a autoria ou fonte"
   >
-    <!--two-way data binding-->
+
+      <!-- Mensagens de erro -->
+
+    <div class="mensagem__erro"
+    *ngIf="formulario.get('autoria')?.errors?.['required'] && formulario.get('autoria')?.touched">
+      Autoria ou fonte é obrigatório
+    </div>
+
+    <div class="mensagem__erro"
+    *ngIf="formulario.get('autoria')?.errors?.['minlength'] && formulario.get('autoria')?.touched">
+      Autoria ou fonte precisa ter no mínimo 4 caracteres
+    </div>
+
 
     <label for="modelo">Selecione o modelo do card:</label>
 
@@ -114,9 +134,19 @@
     </div>
 
     <div class="acoes">
-      <button (click)="criarPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelar()" class="botao">Cancelar</button>
+
+      <button
+        (click)="criarPensamento()"
+        class="botao">Salvar
+    </button>
+
+      <button
+        (click)="cancelar()"
+        class="botao">Cancelar
+    </button>
+
       <!--(click) event binding-->
+
     </div>
 
   </form>
