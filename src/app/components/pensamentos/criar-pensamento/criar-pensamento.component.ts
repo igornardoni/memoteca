@@ -4,6 +4,7 @@ import { Pensamento } from '../pensamento';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-criar-pensamento',
   templateUrl: './criar-pensamento.component.html',
@@ -29,7 +30,7 @@ export class CriarPensamentoComponent implements OnInit {
 
       autoria: ['', Validators.compose([
         Validators.required,
-        Validators.minLength(4)
+        Validators.minLength(4),
       ])],
 
       modelo: ['modelo1']
@@ -50,6 +51,14 @@ export class CriarPensamentoComponent implements OnInit {
 
   cancelar(): void {
     this.router.navigate(['/listar-pensamentos'])
+  }
+
+  habilitarBotao(): string {
+    if(this.formulario.valid) {
+      return 'botao'
+    } else {
+      return 'botao__desabilitado'
+    }
   }
 
 }

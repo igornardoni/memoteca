@@ -71,6 +71,48 @@
       "autoria": "Mestre Yoda",
       "modelo": "modelo1",
       "id": 12
+    },
+    {
+      "conteudo": "Da vida reclama, mas sem ela não vive!",
+      "autoria": "Mestre Yoda ",
+      "modelo": "modelo3",
+      "id": 13
+    },
+    {
+      "conteudo": "NÃO TEM BISCOITO!!!!",
+      "autoria": "Chaves",
+      "modelo": "modelo1",
+      "id": 14
+    },
+    {
+      "conteudo": "Essa é de laranja, que parece de limão, mas tem gosto de tamarindo.",
+      "autoria": "Chaves",
+      "modelo": "modelo2",
+      "id": 15
+    },
+    {
+      "conteudo": "(...) E quer de gromaica, tamão ou limerindo? Não, não, não, de limelia, tamão ou glomarindo? Não, é, é... De groselha, limão ou de tamarindo? (...) De limão? Sim! Mas da que parece limão, da que é de limão ou da que tem sabor de limão?",
+      "autoria": "Chaves",
+      "modelo": "modelo1",
+      "id": 16
+    },
+    {
+      "conteudo": "A vingança nunca é plena; mata a alma e a envenena!",
+      "autoria": "Seu Madruga",
+      "modelo": "modelo2",
+      "id": 17
+    },
+    {
+      "conteudo": "Não há trabalho ruim. O ruim é ter que trabalhar!",
+      "autoria": "Seu Madruga",
+      "modelo": "modelo3",
+      "id": 18
+    },
+    {
+      "conteudo": "Não há nada mais trabalhoso, do que viver sem trabalhar!",
+      "autoria": "Seu Madruga",
+      "modelo": "modelo2",
+      "id": 19
     }
   ]
 }
